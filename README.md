@@ -1,3 +1,15 @@
+# 部分 Windows 设备在 Edge 播放 Netflix 仅有 1080p：4K HDR 排障与临时解决方案
+
+本项目是非官方、实验性的 Edge 扩展，适用于已具备 Netflix 4K 套餐、兼容设备及显示输出条件，但播放仍受限于 1080p 的用户。它尝试改善 PlayReady DRM 协商；不保证 4K，也不绕过套餐、许可证或 HDCP，可能造成播放失败。
+
+[中文详细说明](README.zh-CN.md) · [技术报告](docs/technical-report.zh-CN.md) · [下载插件 ZIP（Releases）](https://github.com/markrtfree/edge-playready-4k-diagnostic/releases)
+
+安装：下载 Release ZIP 并解压，在 edge://extensions 开启开发人员模式，选择“加载解压缩的扩展”，选中包含 manifest.json 的文件夹。关闭其他 DRM 修改插件后重新打开 Netflix。按 Ctrl+Alt+Shift+D 查看 Playing bitrate 的实际分辨率。
+
+若无法播放，在 Netflix 控制台执行 `NetflixSL3000.setMode('compatible')` 并刷新；仍有问题可禁用扩展。默认 prefer 模式可能主动拒绝 Widevine，Netflix 不一定会切换到 PlayReady。
+
+---
+
 # Edge PlayReady 4K Diagnostic
 
 **Unofficial, experimental Microsoft Edge extension** to investigate PlayReady EME negotiation and Netflix 4K/HDR playback on supported Windows PCs. Current version: **0.3.2**. [简体中文说明](README.zh-CN.md) · [Chinese technical report](docs/technical-report.zh-CN.md) · [English technical report](docs/technical-report.en.md)
