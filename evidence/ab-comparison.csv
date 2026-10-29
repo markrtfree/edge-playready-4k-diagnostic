@@ -1,0 +1,4 @@
+phase,extension,title_id,video_res,video_kbps,codec,hdr,netflix_overlay_key_system,available_key_tiers,notes
+on,v0.2,80114792,3840x2160,8930,HEVC,SDR,.2000,"540|1080|2160",Snapshot was paused in one repeat
+off,disabled,80114792,1920x1080,1348,HEVC,SDR,.2000,"540|1080",New playback session
+on_again,v0.2,80114792,3840x2160,8930,HEVC,SDR,.2000,"540|1080|2160",Initial reproducibility indication

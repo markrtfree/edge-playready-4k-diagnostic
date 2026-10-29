@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix PlayReady SL3000 Diagnostic",
+  "version": "0.3.2",
+  "description": "Experimental PlayReady preference, compatible fallback and bounded local diagnostics. Does not guarantee 4K.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.netflix.com/*",
+        "https://netflix.com/*"
+      ],
+      "js": [
+        "diagnose-force.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}

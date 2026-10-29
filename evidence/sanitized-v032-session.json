@@ -1,0 +1,25 @@
+{
+  "collectedAtUTC": "2026-10-29T20:58:26Z",
+  "description": "Sanitized transcript from a single Edge Netflix session; no identifiers or license material",
+  "extensionVersion": "0.3.2",
+  "mode": "prefer",
+  "events": [
+    {"event":"installed","mode":"prefer","version":"0.3.2"},
+    {"event":"EME-request","id":1,"keySystem":"com.microsoft.playready.recommendation.2000"},
+    {"event":"EME-granted","id":1,"requested":"com.microsoft.playready.recommendation.2000","actual":"com.microsoft.playready.recommendation.3000"}
+  ],
+  "player": {
+    "movieId": "81946382",
+    "renderingState": "Playing",
+    "playingResolution": "3840x2160",
+    "videoKbps": 12540,
+    "codec": "HEVC",
+    "hdr": "HDR10",
+    "keySystemOverlay": "com.microsoft.playready.recommendation.2000",
+    "availableKeyTiers": [540,1080,2160],
+    "keyStatus": ["usable","usable","usable"],
+    "totalFramesSnapshot": 1432,
+    "droppedFramesSnapshot": 0
+  },
+  "limitations": ["EME grant does not prove CDM MediaKeys/video binding","Not a long-term stability test","No DRM license contents collected"]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "edge-playready-4k-diagnostic",
+  "version": "0.3.2",
+  "private": true,
+  "description": "Experimental PlayReady/MediaCapabilities negotiation diagnostics for Netflix on Edge",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test diagnostic.test.cjs",
+    "check": "node --check diagnose-force.js && node --check diagnostic.test.cjs"
+  },
+  "engines": { "node": ">=18" }
+}
