@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">Netflix 4K 插件工作原理</title><desc id="desc">Netflix 请求播放，插件尝试让 Edge 选择 PlayReady 3000，浏览器和 Netflix 决定是否可以提供 4K；失败时可切换兼容模式。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#7190b0"/></marker></defs>
+<rect width="1200" height="700" rx="28" fill="#f4f7fb"/>
+<text x="60" y="73" fill="#14263e" font-family="Microsoft YaHei, sans-serif" font-size="36" font-weight="700">插件如何帮助尝试 4K？</text>
+<text x="60" y="111" fill="#596e87" font-family="Microsoft YaHei, sans-serif" font-size="20">一台符合条件的 Windows 电脑，在 Edge 中播放 Netflix</text>
+<rect x="55" y="160" width="230" height="150" rx="18" fill="#fff" stroke="#dae4ef" stroke-width="2"/>
+<text x="170" y="213" text-anchor="middle" fill="#263d56" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700">Netflix 开始播放</text>
+<text x="170" y="254" text-anchor="middle" fill="#5d718a" font-family="Microsoft YaHei, sans-serif" font-size="19">向浏览器询问</text><text x="170" y="282" text-anchor="middle" fill="#5d718a" font-family="Microsoft YaHei, sans-serif" font-size="19">可用的保护方式</text>
+<path d="M290 235 H345" stroke="#7190b0" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="355" y="160" width="300" height="150" rx="18" fill="#e9f2ff" stroke="#8bb7f3" stroke-width="2"/>
+<text x="505" y="213" text-anchor="middle" fill="#154e96" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700">插件优先尝试</text>
+<text x="505" y="254" text-anchor="middle" fill="#235789" font-family="Microsoft YaHei, sans-serif" font-size="20">PlayReady 3000</text><text x="505" y="282" text-anchor="middle" fill="#536b84" font-family="Microsoft YaHei, sans-serif" font-size="18">调整协商请求，不锁定画质</text>
+<path d="M660 235 H715" stroke="#7190b0" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="725" y="160" width="420" height="150" rx="18" fill="#ebf8f0" stroke="#8cd1a4" stroke-width="2"/>
+<text x="935" y="213" text-anchor="middle" fill="#23663b" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700">浏览器和 Netflix 决定结果</text><text x="935" y="254" text-anchor="middle" fill="#486a53" font-family="Microsoft YaHei, sans-serif" font-size="19">条件满足时，可能播放 4K HDR</text><text x="935" y="282" text-anchor="middle" fill="#486a53" font-family="Microsoft YaHei, sans-serif" font-size="18">也可能继续 1080p 或播放失败</text>
+<path d="M505 320 V380 H530" fill="none" stroke="#7190b0" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="55" y="399" width="1090" height="147" rx="18" fill="#fff7e8" stroke="#edcf93" stroke-width="2"/>
+<text x="84" y="445" fill="#805519" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="700">如果播放失败</text>
+<text x="84" y="483" fill="#685a42" font-family="Microsoft YaHei, sans-serif" font-size="19">切换 compatible 兼容模式并刷新；仍不行就禁用插件并重新打开 Netflix。</text>
+<text x="84" y="519" fill="#685a42" font-family="Microsoft YaHei, sans-serif" font-size="19">优先模式可能主动拒绝 Widevine，Netflix 不一定会改用 PlayReady。</text>
+<text x="60" y="612" fill="#52677d" font-family="Microsoft YaHei, sans-serif" font-size="19">插件不会修改套餐、许可证或 HDCP；实际画质仍取决于账号、影片、设备和连接。</text>
+<text x="60" y="650" fill="#7c8ba0" font-family="Microsoft YaHei, sans-serif" font-size="17">实验性方案 · 不保证每次刷新或所有设备都能获得 4K</text>
+</svg>
