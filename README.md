@@ -4,6 +4,14 @@
 
 [中文详细说明](README.zh-CN.md) · [技术报告](docs/technical-report.zh-CN.md) · [下载插件 ZIP（Releases）](https://github.com/markrtfree/edge-playready-4k-diagnostic/releases)
 
+## 开启前 / 开启后对照
+
+同一影片的脱敏截图：开启前为 1920×1080，开启后为 3840×2160。设备、会话、密钥 ID 与 CDN 信息已遮盖。这是单次观察，不能保证每次刷新和所有设备都得到相同结果。
+
+| 开启前：1080p | 开启后：4K |
+|---|---|
+| ![开启前 1080p](docs/assets/comparison-before.png) | ![开启后 4K](docs/assets/comparison-after.png) |
+
 安装：下载 Release ZIP 并解压，在 edge://extensions 开启开发人员模式，选择“加载解压缩的扩展”，选中包含 manifest.json 的文件夹。关闭其他 DRM 修改插件后重新打开 Netflix。按 Ctrl+Alt+Shift+D 查看 Playing bitrate 的实际分辨率。
 
 若无法播放，在 Netflix 控制台执行 `NetflixSL3000.setMode('compatible')` 并刷新；仍有问题可禁用扩展。默认 prefer 模式可能主动拒绝 Widevine，Netflix 不一定会切换到 PlayReady。
